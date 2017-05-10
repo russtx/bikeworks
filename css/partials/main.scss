@@ -1,0 +1,61 @@
+
+
+/*==========================================  Main scss ===================================================================== */
+#inventory{
+  background-image: url(./images/bike-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x:-100px;
+  height: 45.45vh;
+
+}
+.inventoryTitle{
+  padding: 20px 30px;
+  h1{
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 2px $text-red;
+  }
+
+}
+a.btn-main{
+  display: block;
+  border:solid 2px $text-red;
+  background: #fff;
+  color: $text-red;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  padding: 2px 20px;
+  margin: 0 auto;
+  width:100px;
+}
+#scrollDown {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    a{
+      text-decoration: none;
+    }
+}
+#scrollDown>.glyphicon {
+    font-weight: 700;
+    display: block;
+    font-size: 27px;
+}
+#links{
+  padding-top: 50px
+}
+.linkBox{
+  min-height: 150px;
+  text-align: center;
+  img.links-img{
+    display: block;
+    height: 64px;
+    margin: 0 auto;
+  }
+}

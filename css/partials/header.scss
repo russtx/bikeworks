@@ -1,0 +1,78 @@
+/*======================= Header ============================================ */
+.nav{
+  li{
+    font-family: 'Shadows Into Light', cursive;
+  }
+}
+.flex{
+  //display: flex;
+  //justify-content: space-around;
+}
+.navbar-default{
+  background-color: $sand;
+  border-color: transparent;
+
+}
+.navbar-default .navbar-nav{
+  li{
+    a{
+      color: $text-red;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+.navbar-default .navbar-toggle{
+  border-color: $text-red;
+
+  .icon-bar{
+    background-color: $text-red;
+  }
+
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: $sand;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: $sand;
+}
+.navbar{
+  margin-bottom: 0;
+  min-height: 8.8vh;
+}
+.bricks{
+  background-image: url(./images/bricks+overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hours{
+  h3{
+    color: #fff;
+    text-align: center;
+    margin:0;
+  }
+}
+.logo{
+  img{
+    display: block;
+    margin: 0 auto;
+    width:80px;
+  }
+}
+.phone{
+  text-align: center;
+  a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  img.facebook-img{
+    margin: 0 0 12px 0;
+  }
+}
+.masthead{
+  height:45.75vh;
+}
