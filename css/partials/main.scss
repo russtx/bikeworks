@@ -5,7 +5,7 @@
   background-image: url(./images/bike-image.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x:-100px;
+  //background-position-x:-100px;
   height: 45.45vh;
 
 }
@@ -60,5 +60,100 @@ a.btn-main{
   }
   a{
     color: $text-red;
+  }
+}
+#location{
+  background-color: $grey;
+  a.btn-main{
+    margin-top:15px;
+    margin-bottom: 30px;
+  }
+}
+.locationContent{
+  h2{
+    text-align: center;
+    color: #fff;
+  }
+  p{
+    color: $sand;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  span.mapLink{
+    display: block;
+    margin:15px 0 10px 0;
+    text-align: center;
+    a{
+      color: $sand;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+  span.telLink{
+    display: block;
+    margin:15px 0 10px 0;
+    text-align: center;
+    a{
+      color: $sand;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+#map{
+  display: block;
+  max-width:536px;
+  max-height:405px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 30px auto;
+}
+#contact{
+  
+}
+.facebookLink{
+  h2{
+    color: $text-red;
+    text-align: center;
+    img{
+      margin: 0 0 7px 10px;
+    }
+  }
+  .fbBikeWorks{
+    display: block;
+    max-width: 370px;
+    width:100%;
+    margin: 0px auto;
+    background-color: $light-blue;
+    padding: 15px;
+  }
+}
+.contactForm{
+  h2{
+    color: $text-red;
+    text-align: center;
+  }
+  .input-lg{
+    border-radius: 0
+  }
+  .form-control{
+    border:none;
+    background-color: $light-blue;
+
+  }
+  input[type="submit"]{
+    display: block;
+    border:solid 2px $text-red;
+    background: #fff;
+    color: $text-red;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    padding: 2px 20px;
+    //margin: 0 auto;
+    float: right;
+    width:100px;
   }
 }

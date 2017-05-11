@@ -1,1 +1,48 @@
 /*================Footer =============*/
+footer{
+  background-color: $text-red;
+  min-height: 300px;
+  img.footer-logo-img{
+    display: block;
+    width: 80px;
+    margin:15px auto;
+  }
+
+}
+.footer-nav{
+  ul{
+        column-count: 3;
+    li{
+      a{
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+      }
+
+    }
+  }
+}
+.footerTel{
+  text-align: center;
+
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+}
+p.copyright{
+  float: left;
+  padding: 35px 20px 0px;
+  color: #fff;
+}
+p.childress{
+  float: right;
+  padding: 35px 20px 0px;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+}

@@ -6,12 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <?php wp_head(); ?>
 	</head>
 
   <body <?php body_class(isset($class) ? $class : ''); ?>>
-    <div class="masthead">
-      <div class="container-fluid bricks">
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=724983870970769";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="masthead bricks">
+      <div class="container-fluid ">
         <div class="row">
           <div class="col-xs-12 col-sm-4 hours">
             <h3>MON-FRI 10a-7p</h3>
