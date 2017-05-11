@@ -259,6 +259,10 @@ a.btn-main {
   margin: 0 auto;
 }
 
+.linkBox a {
+  color: #6c2125;
+}
+
 /*================Footer =============*/
 /* responsive settings */
 /* Extra small devices (phones, less than 768px) */
