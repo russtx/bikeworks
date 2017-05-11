@@ -1,14 +1,14 @@
 <footer>
   <div class="fluid-container">
     <div class="row">
-      <div class="col-xs 12">
+      <div class="col-xs 12 col-sm-2">
         <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="FooterLogo" class="footer-logo-img"></a>
       </div>
 
-      <nav class="col-xs-12 footer-nav ">
+      <nav class="col-xs-12 col-sm-8 footer-nav ">
           <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar-nav ', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
       </nav>
-      <div class="col-xs-12 footerTel">
+      <div class="col-xs-12 col-sm-2 footerTel">
         <a href="tel:5403738900">Tel:540-373-8900</a>
         <a href="tel:5403730836">Tel:540-373-0836</a>
       </div>

@@ -387,13 +387,13 @@ function bootstrap_theme_enqueue_scripts() {
 
 	wp_enqueue_script( 'script', $template_url . '/js/script.js', array( 'jquery' ), null, true );
 
-	wp_enqueue_script( 'lightbox', $template_url . '/js/lightbox.min.js', array( 'jquery' ), '', true );
+	//wp_enqueue_script( 'lightbox', $template_url . '/js/lightbox.min.js', array( 'jquery' ), '', true );
 
 	//Main Style
   //wp_enqueue_style( 'main-style', $template_url . 'style.css' );
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
 
-  wp_enqueue_style( 'lightbox', $template_url . '/css/lightbox.min.css' );
+  //wp_enqueue_style( 'lightbox', $template_url . '/css/lightbox.min.css' );
 
 
 	// Load Thread comments WordPress script.

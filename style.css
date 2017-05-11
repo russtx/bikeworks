@@ -238,6 +238,7 @@ a.btn-main {
   text-align: center;
   font-weight: 700;
   color: #fff;
+  text-decoration: none;
 }
 
 #scrollDown a {
@@ -421,6 +422,60 @@ p.childress a {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Sass Bootstrap */
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .masthead {
+    height: 17.25vh;
+  }
+  .navbar {
+    height: 7.25vh;
+  }
+  #inventory {
+    height: 75.5vh;
+  }
+  .hours {
+    margin-top: 12px;
+  }
+  .hours h3 {
+    text-align: left;
+  }
+  .logo img {
+    width: 95px;
+  }
+  .phone {
+    text-align: right;
+  }
+  ul#menu-top-menu {
+    display: block;
+    width: 440px;
+    margin: 0 auto;
+    float: none;
+  }
+  .locationContent h2 {
+    margin-top: 60px;
+  }
+  /*======================= Home Page =========================*/
+  .inventoryTitle {
+    padding: 110px 30px;
+  }
+  .facebookLink h2, .contactForm h2 {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+  #contact {
+    min-height: 730px;
+  }
+  /*====================== Footer ===============================*/
+  .footer-nav ul {
+    column-count: unset;
+  }
+  .footer-nav ul li a:focus {
+    background-color: transparent;
+  }
+  .footer-nav ul li a:hover {
+    background-color: transparent;
+  }
+}
+
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
