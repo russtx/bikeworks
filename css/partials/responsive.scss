@@ -58,12 +58,19 @@ $screen-sm-min: 768px;
    min-height: 730px;
  }
  /*====================== Footer ===============================*/
+ footer{
+   min-height: 110px;
+   img.footer-logo-img{
+     width:50px;
+   }
+ }
   .footer-nav{
     ul{
       column-count: unset;
       display: flex;
       justify-content: space-around;
       width: 100%;
+      margin-top: 14px;
       li{
         a:focus{
           background-color: transparent;
@@ -73,6 +80,16 @@ $screen-sm-min: 768px;
         }
       }
     }
+  }
+  .footerTel{
+    text-align: right;
+    margin-top: 14px;
+  }
+  p.copyright{
+    padding: 0px 20px 0px;
+  }
+  p.childress{
+    padding: 0px 20px 0px;
   }
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
