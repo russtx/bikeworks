@@ -11,7 +11,7 @@
 	</head>
 
   <body <?php body_class(isset($class) ? $class : ''); ?>>
-    
+
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -34,7 +34,7 @@
           </div>
           <div class="col-xs-12 col-sm-4 phone">
             <a href="tel:5403738900">540-373-8900</a><br />
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="Facebook" class="facebook-img"></a>
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-3.png" alt="Facebook" class="facebook-img"></a>
           </div>
         </div><!-- row -->
       </div><!-- container-fluid -->

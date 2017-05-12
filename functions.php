@@ -411,6 +411,22 @@ function pu_display_section($section){}
 	}
 	add_filter('excerpt_more', 'new_excerpt_more');
 
+	/**
+	 * Filter the "read more" excerpt string link to the post.
+	 *
+	 * @param string $more "Read more" excerpt string.
+	 * @return string (Maybe) modified "read more" excerpt string.
+	 */
+	function wpdocs_excerpt_more( $more ) {
+	    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+	        get_permalink( get_the_ID() ),
+	        __( '&nbsp; Full Blog Post &#62;', 'textdomain' )
+	    );
+	}
+	add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+
 // AFC functions
 
 if(function_exists('acf_add_options_page')){

@@ -1,7 +1,7 @@
 /*================Footer =============*/
 footer{
   background-color: $text-red;
-  min-height: 300px;
+  min-height: 390px;
   img.footer-logo-img{
     display: block;
     width: 80px;
@@ -34,13 +34,15 @@ footer{
   }
 }
 p.copyright{
-  float: left;
+  //float: left;
+  text-align: center;
   padding: 35px 20px 0px;
   color: #fff;
 }
 p.childress{
-  float: right;
-  padding: 35px 20px 0px;
+  //float: right;
+  text-align: center;
+  padding: 5px 20px 0px;
   color: #fff;
   a{
     color: #fff;

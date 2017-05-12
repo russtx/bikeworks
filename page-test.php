@@ -1,4 +1,5 @@
-<?php /* Template Name: Test Page  */ get_header(); ?>
+<?php  get_header(); ?>
+
 <section id="cakeGallery">
 	<div class="container">
 		<div class="borderBox">
@@ -228,4 +229,5 @@
 
 
 	</section>
+
 <?php get_footer(); ?>

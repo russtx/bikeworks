@@ -15,6 +15,8 @@
     color: #fff;
     font-weight: 600;
     text-shadow: 2px 2px $text-red;
+    text-align: center;
+    font-size: 30px;
   }
 
 }
@@ -24,6 +26,7 @@ a.btn-main{
   background: #fff;
   color: $text-red;
   text-align: center;
+  text-decoration: none;
   font-family: 'Shadows Into Light', cursive;
   font-weight: 600;
   padding: 2px 20px;
@@ -61,6 +64,7 @@ a.btn-main{
   }
   a{
     color: $text-red;
+    font-weight: 600;
   }
 }
 #location{
@@ -124,7 +128,7 @@ a.btn-main{
   }
   .fbBikeWorks{
     display: block;
-    max-width: 370px;
+    max-width: 372px;
     width:100%;
     margin: 0px auto;
     background-color: $light-blue;
@@ -137,7 +141,7 @@ a.btn-main{
     text-align: center;
   }
   .input-lg{
-    border-radius: 0
+    border-radius: 0;
   }
   .form-control{
     border:none;
@@ -156,5 +160,131 @@ a.btn-main{
     //margin: 0 auto;
     float: right;
     width:100px;
+    margin: 20px 0 60px 0;
+  }
+  .form-group{
+    margin-bottom: 0;
+  }
+}
+#hero{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:250px;
+  .greyArea{
+    display: block;
+    position: relative;
+    background-color: $trans-grey;
+    width: 100%;
+    height:210px;
+    top: 22px;
+  }
+  .heroContent{
+    padding: 10px 30px;
+    //margin-top:20px;
+    p{
+      color:#fff;
+    }
+  }
+}
+#team{
+  h2{
+    text-align: center;
+    color: $text-red;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    margin: 30px 0;
+    font-size: 36px;
+  }
+  .employeeInfo{
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+    h3{
+      text-align: center;
+      color: $text-red;
+      font-family: 'Shadows Into Light', cursive;
+      font-weight: 600;
+      font-size:30px
+    }
+    h4{
+      text-align: center;
+      text-transform: uppercase;
+      color: $grey;
+    }
+    p{
+      text-align: center;
+    }
+  }
+}
+/*=================================== Blog Page ===================================================*/
+#hero-blog{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  h1{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top:60px;
+  }
+  .heroSocials{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 40px;
+  }
+}
+.blogHeader{
+  h2{
+    font-size: 26px;
+    text-align: center;
+    color: $grey;
+    font-weight: 600;
+  }
+}
+.blogSwitch{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 100px;
+  span{
+    min-height:60px;
+    h5{
+      position: absolute;
+      bottom: 0;
+      font-family: 'Shadows Into Light', cursive;
+      color: $text-red;
+      text-align: center;
+    }
+  }
+  span:nth-child(2){
+    h5{
+      font-family: 'Shadows Into Light', cursive;
+      color: $grey;
+      text-align: center;
+    }
+    img{
+      padding-top:7px;
+    }
+  }
+}
+hr{
+  width:80%;
+
+  border-top: 1px solid $grey;
+}
+.blogPost{
+  span{
+    float: left;
+    clear: both;
+    color: $text-red;
+    margin: 0 10px 0 20px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  span:nth-child(2){
+    font-size: 50px;
   }
 }
