@@ -139,7 +139,9 @@ $screen-sm-min: 768px;
   p.childress{
     padding: 0px 20px 0px;
   }
-
+  #contactUs{
+    margin-top:-34px;
+  }
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
 @media (min-width: $screen-md-min) {
@@ -224,7 +226,18 @@ $screen-sm-min: 768px;
       top:95px;
     }
   }
-  
+  /*======================= single.php =========================*/
+  .latestPostContent{
+    h2{
+      font-size: 26px;
+    }
+    h3{
+      font-size: 16px;
+    }
+    h4{
+      font-size: 16px;
+    }
+  }
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {

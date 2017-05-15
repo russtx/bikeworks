@@ -334,6 +334,8 @@ a.btn-main {
 .facebookLink h2 {
   color: #6c2125;
   text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
 }
 
 .facebookLink h2 img {
@@ -352,6 +354,8 @@ a.btn-main {
 .contactForm h2 {
   color: #6c2125;
   text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
 }
 
 .contactForm .input-lg {
@@ -492,24 +496,272 @@ a.btn-main {
   padding-top: 7px;
 }
 
-hr {
-  width: 80%;
-  border-top: 1px solid #7d7c89;
+.blogPost {
+  margin-bottom: 20px;
+  border-bottom: 1px #7d7c89 solid;
 }
 
 .blogPost span {
   float: left;
   clear: both;
   color: #6c2125;
-  margin: 0 10px 0 20px;
+  margin: 0 10px 0px 20px;
   padding: 0;
   font-size: 30px;
   font-weight: 600;
   line-height: 1;
 }
 
-.blogPost span:nth-child(2) {
+.blogPost span:nth-child(2n) {
   font-size: 50px;
+}
+
+.blogPost:nth-child(3) {
+  margin-top: 40px;
+}
+
+.blogPost:last-child {
+  border-bottom: none;
+}
+
+.postContent h2 {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.postContent h2 a {
+  color: #6c2125;
+}
+
+.postContent h3 {
+  color: #6c2125;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.postContent h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 0 0;
+  padding: 5px 0 20px 0;
+}
+
+.postContent p {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.postContent a.read-more {
+  font-family: 'NewsCycle', sans-serif;
+  color: #6c2125;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.postContent a.read-more:before, .postContent a.read-more:after {
+  content: "";
+  display: table;
+}
+
+.postContent a.read-more:after {
+  clear: both;
+}
+
+.postContent a.read-more:before, .postContent a.read-more:after {
+  margin: 20px 0 0 0;
+}
+
+#followUs {
+  background-image: url(./images/bricks-2-overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#followUs span h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  padding: 20px 0 50px 0;
+}
+
+#followUs span h2 img {
+  height: 29px;
+  margin-top: -4px;
+}
+
+#followUs .facebookLink {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#followUs .videoLink {
+  display: block;
+  padding: 20px 0 50px 0;
+}
+
+#followUs .videoLink a img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*=================================== Single.php ===================================================*/
+.latestPostContent {
+  background-color: #cbddf2;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.latestPostContent img {
+  display: block;
+  margin: 20px auto;
+}
+
+.latestPostContent span {
+  float: left;
+  clear: both;
+  color: #6c2125;
+  margin: 0 10px 0px 20px;
+  padding: 0 26px 0 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.latestPostContent span:nth-child(3n) {
+  font-size: 50px;
+}
+
+.latestPostContent .left {
+  text-align: left;
+  color: #6c2125;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.latestPostContent .left a {
+  color: #6c2125;
+}
+
+.latestPostContent .right {
+  text-align: right;
+  color: #6c2125;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.latestPostContent .right a {
+  color: #6c2125;
+}
+
+.latestPostContent h2 {
+  font-family: 'NewsCycle', sans-serif;
+  color: #6c2125;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.latestPostContent h3 {
+  color: #6c2125;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.latestPostContent h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 0 0;
+  padding: 5px 0 20px 0;
+}
+
+.latestPostRight {
+  overflow-y: scroll;
+  max-height: 525px;
+  padding-top: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/*=================================== Contact US  ===================================================*/
+.clearfix {
+  clear: both;
+  height: 0;
+}
+
+#contactUs .contactContainer {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+#contactUs .col-xs-4 {
+  padding-left: 0;
+}
+
+.contactLeft img {
+  display: block;
+  max-height: 670px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.contactRight {
+  padding: 20px;
+  color: #7d7c89;
+}
+
+.contactRight h1 {
+  text-align: center;
+  color: #6c2125;
+}
+
+/*=================================== Trails Page  ===================================================*/
+#heroTrails {
+  margin-top: -20px;
+}
+
+.heroImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.heroImage h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.heroContent {
+  color: #6c2125;
+  padding: 30px;
+  font-size: 18px;
+}
+
+#trails {
+  background-image: url(./images/bricks-2-overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*================Footer =============*/
@@ -671,6 +923,9 @@ p.childress a {
   p.childress {
     padding: 0px 20px 0px;
   }
+  #contactUs {
+    margin-top: -34px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
@@ -734,6 +989,16 @@ p.childress a {
   }
   #hero .greyArea {
     top: 95px;
+  }
+  /*======================= single.php =========================*/
+  .latestPostContent h2 {
+    font-size: 26px;
+  }
+  .latestPostContent h3 {
+    font-size: 16px;
+  }
+  .latestPostContent h4 {
+    font-size: 16px;
   }
 }
 

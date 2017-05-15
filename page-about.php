@@ -11,12 +11,12 @@
 	<section id="team">
 		<h2>Meet Our Team</h2>
 		<div class="container">
-			<div class="row">
+			<div class="row row-centered">
 						<?php
 								if( have_rows('employee_info') ):
 
 								while ( have_rows('employee_info') ) : the_row(); ?>
-										<div class="col-xs-12 col-sm-3 employeeInfo">
+										<div class="col-xs-12 col-sm-3 col-centered employeeInfo">
 								        <img src="<?php the_sub_field('employee_image'); ?>" />
 												<h3><?php the_sub_field('employee_name'); ?></h3>
 												<h4><?php the_sub_field('employee_position'); ?></h4>

@@ -122,6 +122,8 @@ a.btn-main{
   h2{
     color: $text-red;
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
     img{
       margin: 0 0 7px 10px;
     }
@@ -139,6 +141,8 @@ a.btn-main{
   h2{
     color: $text-red;
     text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
   }
   .input-lg{
     border-radius: 0;
@@ -268,23 +272,242 @@ a.btn-main{
     }
   }
 }
-hr{
-  width:80%;
+#content{
 
-  border-top: 1px solid $grey;
 }
 .blogPost{
+  margin-bottom: 20px;
+  border-bottom: 1px $grey solid;
   span{
     float: left;
     clear: both;
     color: $text-red;
-    margin: 0 10px 0 20px;
+    margin: 0 10px 0px 20px;
     padding: 0;
     font-size: 30px;
     font-weight: 600;
     line-height: 1;
+
   }
-  span:nth-child(2){
+  span:nth-child(2n){
     font-size: 50px;
   }
+  &:nth-child(3){
+    margin-top:40px;
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+}
+.postContent{
+  h2{
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    a{
+      color: $text-red;
+    }
+  }
+  h3{
+    color: $text-red;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  h4{
+    font-weight: 500;
+    font-size: 18px;
+    margin:0 0 0 0;
+    padding: 5px 0 20px 0;
+  }
+  p{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  a.read-more{
+    font-family: 'NewsCycle', sans-serif;
+    color: $text-red;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    @include clearfix();
+    @include margin-1();
+  }
+}
+#followUs{
+  background-image: url(./images/bricks-2-overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  span h2{
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    padding: 20px 0 50px 0;
+    img{
+      height: 29px;
+      margin-top: -4px;
+    }
+  }
+  .facebookLink{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px
+  }
+  .videoLink{
+    display: block;
+    padding: 20px 0 50px 0;
+    a{
+      img{
+        display: block;
+        //width:100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+/*=================================== Single.php ===================================================*/
+.latestPostContent{
+  background-color: $light-blue;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  img{
+    display: block;
+    margin: 20px auto;
+  }
+  span{
+    float: left;
+    clear: both;
+    color: $text-red;
+    margin: 0 10px 0px 20px;
+    padding: 0 26px 0 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+
+  }
+  span:nth-child(3n){
+    font-size: 50px;
+  }
+  .left{
+    text-align: left;
+    color: $text-red;
+    font-size: 16px;
+    font-weight: 500;
+    a{
+      color: $text-red;
+    }
+  }
+  .right{
+    text-align: right;
+    color: $text-red;
+    font-size: 16px;
+    font-weight: 500;
+    a{
+      color: $text-red;
+    }
+  }
+  h2{
+    font-family: 'NewsCycle', sans-serif;
+    color: $text-red;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  h3{
+    color: $text-red;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  h4{
+    font-weight: 500;
+    font-size: 18px;
+    margin:0 0 0 0;
+    padding: 5px 0 20px 0;
+  }
+}
+.latestPostRight{
+  overflow-y: scroll;
+  max-height: 525px;
+  padding-top: 30px;
+
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+/*=================================== Contact US  ===================================================*/
+.clearfix{
+  clear: both;
+  height: 0;
+}
+#contactUs{
+
+  .contactContainer{
+    display: block;
+    width:100%;
+    padding: 0;
+  }
+  .col-xs-4{
+    padding-left:0;
+  }
+  .col-xs-8{
+  //padding-right:0;
+  }
+
+}
+.contactLeft{
+  img{
+    display: block;
+    max-height:670px;
+    height:100%;
+    width: 100%;
+    padding:0;
+    //float: left;
+  }
+
+}
+.contactRight{
+  padding:20px;
+  color: $grey;
+  h1{
+    text-align: center;
+    color: $text-red;
+  }
+}
+/*=================================== Trails Page  ===================================================*/
+#heroTrails{
+  margin-top:-20px;
+}
+.heroImage{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+}
+.heroContent{
+  color:$text-red;
+  padding: 30px;
+  font-size: 18px;
+}
+#trails{
+  background-image: url(./images/bricks-2-overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
