@@ -37,9 +37,10 @@
 
 		          else: ?>
 							<div class="blogPost">
-								<span><?php echo get_the_date('F'); ?></span>
-								<span><?php echo get_the_date('j'); ?></span>
 								<div class="postImage">
+									<span><?php echo get_the_date('F'); ?></span>
+									<span><?php echo get_the_date('j'); ?></span>
+
 									<?php the_post_thumbnail(); ?>
 								</div>
 		            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
