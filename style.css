@@ -707,14 +707,15 @@ a.btn-main {
   height: 0;
 }
 
-#contactUs .contactContainer {
+#contactUs .container-fluid, #map-2 .container-fluid {
+  padding: 0;
+  overflow: hidden;
+}
+
+#contactUs .contactContainer, #map-2 .contactContainer {
   display: block;
   width: 100%;
   padding: 0;
-}
-
-#contactUs .col-xs-4 {
-  padding-left: 0;
 }
 
 .contactLeft img {
@@ -762,6 +763,32 @@ a.btn-main {
   background-image: url(./images/bricks-2-overlay.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.trailContent {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  margin: 20px;
+  color: #6c2125;
+}
+
+.trailContent img {
+  display: block;
+  height: auto;
+  padding: 0;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+.trailContent h2 {
+  font-size: 20px;
+}
+
+.trailContent a {
+  color: #6c2125;
 }
 
 /*================Footer =============*/
@@ -890,6 +917,14 @@ p.childress a {
   #team .employeeInfo img {
     width: 160px;
   }
+  /*======================= Contact Page =========================*/
+  #contactUs {
+    margin-top: -34px;
+  }
+  /*======================= Trails Page =========================*/
+  .trailContent {
+    min-height: 460px;
+  }
   /*====================== Footer ===============================*/
   footer {
     min-height: 110px;
@@ -922,9 +957,6 @@ p.childress a {
   }
   p.childress {
     padding: 0px 20px 0px;
-  }
-  #contactUs {
-    margin-top: -34px;
   }
 }
 
@@ -1000,6 +1032,10 @@ p.childress a {
   .latestPostContent h4 {
     font-size: 16px;
   }
+  /*======================= Trails Page =========================*/
+  .trailContent {
+    min-height: 345px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
@@ -1009,6 +1045,11 @@ p.childress a {
   }
   .contactForm input[type="submit"] {
     margin: 20px 98px 60px 0;
+  }
+  /*======================= Trails Page =========================*/
+  .trailContent {
+    min-height: 300px;
+    line-height: 1.3;
   }
 }
 

@@ -452,15 +452,18 @@ a.btn-main{
   clear: both;
   height: 0;
 }
-#contactUs{
-
+#contactUs, #map-2{
+  .container-fluid{
+    padding:0;
+    overflow: hidden;
+  }
   .contactContainer{
     display: block;
     width:100%;
     padding: 0;
   }
   .col-xs-4{
-    padding-left:0;
+    //padding-left:0;
   }
   .col-xs-8{
   //padding-right:0;
@@ -510,4 +513,26 @@ a.btn-main{
   background-image: url(./images/bricks-2-overlay.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.trailContent{
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  margin: 20px;
+  color: $text-red;
+  img{
+    display: block;
+    height: auto;
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+  h2{
+font-size: 20px;
+  }
+  a{
+    color: $text-red;
+  }
 }

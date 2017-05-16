@@ -12,7 +12,35 @@
 
 	</section><!-- heroTrails -->
   <section id="trails">
+    <div class="container">
+      <div class="row">
+          <?php
 
+          if( have_rows('local_trails') ):
+
+       	  while ( have_rows('local_trails') ) : the_row(); ?>
+
+            <div class="col-xs-12 col-sm-6 ">
+              <div class="trailContent">
+                  <div class="col-xs-4">
+                      <img src="<?php the_sub_field('trail_image'); ?>" alt="Trail Image" />
+                  </div>
+
+                  <div class="col-xs-8">
+                      <h2><?php the_sub_field('trail_title'); ?></h2>
+
+                      <?php the_sub_field('trail_content'); ?>
+
+                      <a href="<?php the_sub_field('trail_location'); ?>">LOCATE THE PARK &#62;</a>
+                    </div>
+                </div> <!-- trailContent -->
+              </div>
+
+
+          <?php endwhile; else :  endif;  ?>
+
+    </div><!-- row -->
+    </div><!-- container -->
   </section><!-- trails -->
   <section id="location">
 		<div class="container">

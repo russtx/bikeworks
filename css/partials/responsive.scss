@@ -100,7 +100,14 @@ $screen-sm-min: 768px;
      }
    }
  }
-
+ /*======================= Contact Page =========================*/
+ #contactUs{
+   margin-top:-34px;
+ }
+/*======================= Trails Page =========================*/
+  .trailContent{
+    min-height:460px;
+  }
 
  /*====================== Footer ===============================*/
  footer{
@@ -139,9 +146,8 @@ $screen-sm-min: 768px;
   p.childress{
     padding: 0px 20px 0px;
   }
-  #contactUs{
-    margin-top:-34px;
-  }
+
+
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
 @media (min-width: $screen-md-min) {
@@ -238,6 +244,10 @@ $screen-sm-min: 768px;
       font-size: 16px;
     }
   }
+  /*======================= Trails Page =========================*/
+    .trailContent{
+      min-height:345px;
+    }
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {
@@ -249,7 +259,11 @@ $screen-sm-min: 768px;
       margin: 20px 98px 60px 0;
     }
   }
-
+  /*======================= Trails Page =========================*/
+    .trailContent{
+      min-height:300px;
+      line-height: 1.3;
+    }
 
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */

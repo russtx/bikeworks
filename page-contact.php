@@ -3,7 +3,7 @@
 <div class="clearfix">
 	<!-- section -->
 	<section id="contactUs">
-		<div class="contactContainer">
+		<div class=" container-fluid ">
 			<div class="row">
 
 
@@ -52,7 +52,13 @@
 
 	</section><!-- contactUs -->
 	<section id="map-2">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.948554626611!2d-77.46115148438868!3d38.30385968931475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6c20f89f2a0a7%3A0xc6037d4b696e1099!2sBike+Works!5e0!3m2!1sen!2sus!4v1494872291201" width="1900" height="346" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 contactMap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.948554626611!2d-77.46115148438868!3d38.30385968931475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6c20f89f2a0a7%3A0xc6037d4b696e1099!2sBike+Works!5e0!3m2!1sen!2sus!4v1494872291201" max-width="1900" width=100% height="346" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
 	</section><!-- map -->
 
 	<section id="contact">
