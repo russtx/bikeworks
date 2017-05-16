@@ -93,11 +93,9 @@
 					<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
 				</div>
 
-				<div class="col-cs-12 col-sm-6 facebookLink">
-					<h2>GET ON TRACK WITH US<img src="<?php echo get_template_directory_uri(); ?>/images/facebook-2.png" alt="Facebook-2" class="facebook-2-img" /></h2>
-					<div class="fbBikeWorks">
-						<div class="fb-page" data-href="https://www.facebook.com/Fredericksburgwebsitedesign/" data-tabs="timeline" data-width="366px" data-height="440" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Fredericksburgwebsitedesign/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Fredericksburgwebsitedesign/">The Childress Agency, Inc.</a></blockquote></div>
-					</div>
+				<div class="col-cs-12 col-sm-6 facebookReviews">
+					<h2>Customer Reviews</h2>
+					<?php get_sidebar(); ?>
 				</div>
 
 			</div><!-- row -->

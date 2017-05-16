@@ -619,6 +619,21 @@ a.btn-main {
   margin: 0 auto;
 }
 
+.facebookReviews h2 {
+  color: #6c2125;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  padding-top: 35px;
+}
+
+#fbrev_widget-2 {
+  overflow-y: scroll;
+  padding-top: 20px;
+  padding-left: 10px;
+  height: 500px;
+}
+
 /*=================================== Single.php ===================================================*/
 .latestPostContent {
   background-color: #cbddf2;
