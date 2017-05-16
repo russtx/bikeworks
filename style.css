@@ -440,6 +440,10 @@ a.btn-main {
   text-align: center;
 }
 
+.mainContent {
+  padding: 30px;
+}
+
 /*=================================== Blog Page ===================================================*/
 #hero-blog {
   background-size: cover;
@@ -573,6 +577,12 @@ a.btn-main {
 
 .postContent a.read-more:before, .postContent a.read-more:after {
   margin: 20px 0 0 0;
+}
+
+.postImage img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #followUs {
@@ -805,12 +815,15 @@ footer img.footer-logo-img {
 
 .footer-nav ul {
   column-count: 3;
+  font-family: 'Shadows Into Light', cursive;
+  list-style: none;
 }
 
 .footer-nav ul li a {
   color: #fff;
   font-size: 24px;
   text-align: center;
+  text-decoration: none;
 }
 
 .footerTel {
@@ -925,39 +938,6 @@ p.childress a {
   .trailContent {
     min-height: 460px;
   }
-  /*====================== Footer ===============================*/
-  footer {
-    min-height: 110px;
-  }
-  footer img.footer-logo-img {
-    width: 50px;
-  }
-  .footer-nav ul {
-    column-count: unset;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 14px;
-  }
-  .footer-nav ul li a:focus {
-    background-color: transparent;
-  }
-  .footer-nav ul li a:hover {
-    background-color: transparent;
-  }
-  .footerTel {
-    text-align: right;
-    margin-top: 14px;
-  }
-  .footerTel a {
-    float: right;
-  }
-  p.copyright {
-    padding: 0px 20px 0px;
-  }
-  p.childress {
-    padding: 0px 20px 0px;
-  }
 }
 
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
@@ -1035,6 +1015,39 @@ p.childress a {
   /*======================= Trails Page =========================*/
   .trailContent {
     min-height: 345px;
+  }
+  /*====================== Footer ===============================*/
+  footer {
+    min-height: 110px;
+  }
+  footer img.footer-logo-img {
+    width: 50px;
+  }
+  .footer-nav ul {
+    column-count: unset;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 14px;
+  }
+  .footer-nav ul li a:focus {
+    background-color: transparent;
+  }
+  .footer-nav ul li a:hover {
+    background-color: transparent;
+  }
+  .footerTel {
+    text-align: right;
+    margin-top: 14px;
+  }
+  .footerTel a {
+    float: right;
+  }
+  p.copyright {
+    padding: 0px 20px 0px;
+  }
+  p.childress {
+    padding: 0px 20px 0px;
   }
 }
 

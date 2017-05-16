@@ -15,13 +15,39 @@ if ( ! isset( $content_width ) ) {
 }
 
 //Add menu support and register main menu
-if ( function_exists( 'register_nav_menus' ) ) {
+add_action( 'init', 'bikeworks_register_menus' );
+function bikeworks_register_menus(){
   	register_nav_menus(
   		array(
-  		  'main_menu' => 'Main Menu'
+  		  'main_menu' => 'Main Menu',
+				'footer-nav-1' => 'Footer Bike Works Menu'
   		)
   	);
 }
+
+function bikeworks_footer_1_menu(){ ?>
+
+  <ul class="footer-nav">
+
+    <li><a href="<?php echo home_url('home'); ?>">Home</a></li>
+
+    <li><a href="<?php echo home_url('about'); ?>">About </a></li>
+
+    <li><a href="<?php echo home_url('repair'); ?>">Repair</a></li>
+
+    <li><a href="<?php echo home_url('inventory'); ?>">Inventory</a></li>
+
+		<li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+
+		<li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
+
+		<li><a href="<?php echo home_url('Trails'); ?>">Trails</a></li>
+
+		<li><a href="<?php echo home_url('right-fit'); ?>">Right Fit</a></li>
+
+  </ul>
+
+<?php }
 
 
 // filter the Gravity Forms button type
@@ -157,20 +183,7 @@ endif;
 
 //new menu
 
-function register_my_menu() {
-  register_nav_menu('footer-menu',__( 'Footer Menu' ));
-}
-add_action( 'init', 'register_my_menu' );
 
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'footer-menu' => __( 'Footer Menu' ),
-      'extra-menu' => __( 'Extra Menu' )
-    )
-  );
-}
-add_action( 'init', 'register_my_menus' );
 
 
 

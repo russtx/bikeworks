@@ -1,14 +1,42 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-xs 12 col-sm-2">
+      <div class="col-xs 12 col-md-2">
         <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="FooterLogo" class="footer-logo-img"></a>
       </div>
 
-      <nav class="col-xs-12 col-sm-7 footer-nav ">
-          <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar-nav ', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
+      <nav class="col-xs-12 col-md-7 footer-nav ">
+        <?php
+
+                $footer_1_defaults = array(
+
+                  'theme_location' => 'footer-nav-1',
+
+                  'menu' => 'Footer Bikeworks Menu',
+
+                  'container' => '',
+
+                  'container_class' => '',
+
+                  'container_id' => '',
+
+                  'menu_class' => 'footer-nav',
+
+                  'menu_id' => '',
+
+                  'echo' => true,
+
+                  'fallback_cb' => 'bikeworks_footer_1_menu',
+
+                  'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+
+                  'depth' => 1
+
+                );
+
+                wp_nav_menu($footer_1_defaults); ?>
       </nav>
-      <div class="col-xs-12 col-sm-3 footerTel">
+      <div class="col-xs-12 col-md-3 footerTel">
         <a href="tel:5403738900">Tel:540-373-8900</a><br />
         <a href="tel:5403730836">Tel:540-373-0836</a>
       </div>

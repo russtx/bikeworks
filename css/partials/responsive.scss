@@ -109,43 +109,7 @@ $screen-sm-min: 768px;
     min-height:460px;
   }
 
- /*====================== Footer ===============================*/
- footer{
-   min-height: 110px;
-   img.footer-logo-img{
-     width:50px;
-   }
- }
-  .footer-nav{
-    ul{
-      column-count: unset;
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      margin-top: 14px;
-      li{
-        a:focus{
-          background-color: transparent;
-        }
-        a:hover{
-          background-color: transparent;
-        }
-      }
-    }
-  }
-  .footerTel{
-    text-align: right;
-    margin-top: 14px;
-    a{
-      float: right;
-    }
-  }
-  p.copyright{
-    padding: 0px 20px 0px;
-  }
-  p.childress{
-    padding: 0px 20px 0px;
-  }
+
 
 
 }
@@ -248,6 +212,43 @@ $screen-sm-min: 768px;
     .trailContent{
       min-height:345px;
     }
+    /*====================== Footer ===============================*/
+    footer{
+      min-height: 110px;
+      img.footer-logo-img{
+        width:50px;
+      }
+    }
+     .footer-nav{
+       ul{
+         column-count: unset;
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+         margin-top: 14px;
+         li{
+           a:focus{
+             background-color: transparent;
+           }
+           a:hover{
+             background-color: transparent;
+           }
+         }
+       }
+     }
+     .footerTel{
+       text-align: right;
+       margin-top: 14px;
+       a{
+         float: right;
+       }
+     }
+     p.copyright{
+       padding: 0px 20px 0px;
+     }
+     p.childress{
+       padding: 0px 20px 0px;
+     }
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {

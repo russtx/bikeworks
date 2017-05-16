@@ -12,11 +12,14 @@ footer{
 .footer-nav{
   ul{
         column-count: 3;
+        font-family: 'Shadows Into Light', cursive;
+        list-style: none;
     li{
       a{
         color: #fff;
         font-size: 24px;
         text-align: center;
+        text-decoration: none;
       }
 
     }
